@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -21,13 +22,25 @@
     &--back {
       transform: rotateY(180deg);
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
       }
       &-2 {
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
       }
       &-3 {
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
       }
     }
   }
@@ -48,15 +61,27 @@
     border-top-right-radius: 3px;
     &--1 {
       background-image: url(../img/nat-5.jpg),
-        linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
     }
     &--2 {
       background-image: url(../img/nat-6.jpg),
-        linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
     }
     &--3 {
       background-image: url(../img/nat-7.jpg),
-        linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
     }
   }
   &__heading {
